@@ -1,28 +1,38 @@
 body
 {
-  background:      ;/* couleur du fond */
-  font-family: "Arial", sans-serif; /*définition de la police d'écriture*/
-  color: ;      /*définition de la ouleur de la police*/
+  display: grid;
+  background-color: grey;
+  font-family: "Arial", sans-serif; font-size: 32px;
+  color: #000000;
+  grid-template-columns: 200px 400px;
+  grid-template-rows: 100px 300px;
+  gap: 10px;
+  grid-template-areas: "h h h"
+                       "b b b"
+                       "ar ar as"
+                       "f f f";
 }
 
 header
 {
-
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: h;
 }
 
 .banniere
 {
-
+  grid-area: h;
 }
 
 article
 {
-
+  grid-area: ar;
 }
 
 aside
 {
-
+  grid-area: as;
 }
 
 footer
@@ -80,7 +90,7 @@ nav a:hover
 
 #banniere_image
 {
-    height: 200px;
+    height: 400px;
 }
 
 article,  aside
